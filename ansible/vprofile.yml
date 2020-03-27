@@ -21,7 +21,7 @@
   - name: Stop tomcat service
     service: name=tomcat state=stopped
 
-  - name: Copy artifact to tomcat folderr
+  - name: Copy artifact to tomcat folder
     shell: cp /tmp/{{vprofile_version}} /var/lib/tomcat/webapps
 
   - name: Delete link to existing vprofile version
